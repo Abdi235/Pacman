@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ultimate Pacman</title>
+  </head>
+
+  <body style="margin: 0; background-color: black">
+    <canvas id="canvas" width="500" height="500"></canvas>
+    <div style="display: none">
+      <img id="animation" src="animations.gif" width="140" height="20" />
+      <img id="ghosts" src="ghost.png" width="140" height="20" />
+    </div>
+    <audio id="gameMusic" loop>
+      <source
+        src="Coldplay Greatest Hits Full Album 2023 Coldplay Best Songs Playlist 2023.mp3"
+        type="audio/mp3"
+      />
+      <!-- Add additional source elements for other audio formats if needed -->
+    </audio>
+    <button id="playButton">Play Game Music</button>
+    <script src="theghost.js"></script>
+    <script src="thepacman.js"></script>
+    <script src="thegame.js"></script>
+    <script src="gamemusic.js"></script>
+  </body>
+</html>
