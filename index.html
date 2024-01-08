@@ -14,16 +14,31 @@
       <img id="ghosts" src="ghost.png" width="140" height="20" />
     </div>
     <audio id="gameMusic" loop>
-      <source
-        src="PacMan Original Theme.mp3"
-        type="audio/mp3"
-      />
+      <source src="PacMan Original Theme.mp3" type="audio/mp3" />
       <!-- Add additional source elements for other audio formats if needed -->
     </audio>
-    <button id="playButton">Play Game Music</button>
     <script src="theghost.js"></script>
     <script src="thepacman.js"></script>
     <script src="thegame.js"></script>
     <script src="gamemusic.js"></script>
+    <script>
+      // To play the music
+      function playGameMusic() {
+        gameMusic.play();
+      }
+
+      // To pause the music
+      function pauseGameMusic() {
+        gameMusic.pause();
+      }
+
+      gameMusic.volume = 0.8; // Adjust volume (0.0 to 1.0)
+      gameMusic.loop = true; // Enable loop
+
+      // Add this to your game initialization logic
+      playGameMusic(); // Initiate playback automatically
+
+      // Your game logic goes here...
+    </script>
   </body>
 </html>
